@@ -36,7 +36,7 @@ public class Point3d {
 		zCoord = z;
 	}
 	
-	// Сравнение
+	// Проверка на одинаковые точки
 	public boolean equals(Point3d point) {
 		if (this.xCoord == point.xCoord && 
 			this.yCoord == point.yCoord && 
@@ -45,7 +45,7 @@ public class Point3d {
 		else { return false; }
 	}	
 	
-	// Расстояние
+	// Расстояние между двумя точками
 	public double distanceTo(Point3d point){
 		return Math.sqrt(Math.pow(this.xCoord-point.xCoord,2)+
 		Math.pow(this.yCoord-point.yCoord,2)+ Math.pow(this.zCoord-point.zCoord,2));
